@@ -1,0 +1,120 @@
+body{
+    background-color: rgba(255, 255, 255, 0.58);
+}
+
+.background-heading{
+    background-image: url("https://dpmb0w.bn.files.1drv.com/y4mGPjzvDUTc8NPDK_8F4K6y2XUTkDLp862fp5Swc4shKMC67BUX8uch_NWHYxswQA_62RkAMDGsqJt4vSZ6KK_pg_tbUP3Zf9BmgYrdVnKXTq5Pjt5pEnjk7NQ0R9KYHvqIg7jRwRJ4Ycpw02e5K439iW8ZHWMGIimacYVWezWIPTANnCQQ_CTxZlUHBnSytRmdw_cHNQ_RO3Z514rlm74Tg?width=3000&height=2000&cropmode=none");
+    margin-top: -2vh;
+    padding-top: 15vh;
+    padding-bottom: 4vh;
+    background-size: 100%;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+    letter-spacing: 6px;
+}
+
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    margin: 0 19vw 0 19vw;
+}
+
+.content-page{
+    background-color: #ffffff;
+    margin: 0 20vw 0 20vw;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sub-section{
+    color: #005584;
+    padding-left: 3vw;
+    text-align: left;
+    font-size: 3.2vh;
+    margin-top: 5vh;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+.under-subheading{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0) 100%);
+    margin: 1vh 20vw 0 3vw;
+}
+
+.text-block{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    padding: 6.5vh 5vw 6.5vh 5vw;
+    line-height: 3.5vh;
+}
+
+.highlight{
+    color: #7f7b80;
+}
+
+.subtitle{
+    background-color: #e6e6e6;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #616161;
+    font-size: 2vh;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.figure{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    max-width:100%;
+    max-height:100%;
+}
+
+.figure-desc{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2vh;
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 4.8vh;
+    padding-top: 3.2vh;
+    padding-bottom: 3vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .content-page{
+        margin: 0 12vw 0 12vw;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .content-page{
+        margin: 0;
+    }
+    .heading{
+        font-size: 2em;
+    }
+}
+.table{
+    text-align: center;
+}
+.table th{
+    background-color: #444;
+    color: white;
+}
+.table td, .table th {
+    border: 0px solid #ddd;
+    padding: 2vw;
+}

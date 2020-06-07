@@ -1,0 +1,34 @@
+.name-container{
+    background-color: #afafaf;
+    margin: 72vh 60vw 0 0;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    padding: 2vh 2vw 2vh 2vw;
+    font-size: 3vh;
+    transition: transform .5s cubic-bezier(1.000, 0.005, 0.240, 1.000);
+}
+
+#resume{
+    text-align: right;
+}
+
+.animate-name{
+    transform: translateX(-500px);
+}
+
+.profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vh;
+    border-radius: 50%;
+}
+.profile-container{
+padding-top: 10vh;
+}
+
+.subtitle{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
