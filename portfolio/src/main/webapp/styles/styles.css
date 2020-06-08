@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald|Abel');
+
+/* Position needs to be relative so that children divisions can then be absolute */
+.image-container {
+
+    position: relative;
+
+}
+
+/* The image itself */
+.profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* It needs a specific height/width for the styling to work property */
+    width: 100px;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* Static properties of the overlay */
+.overlay-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 400px;
+    background-color: white;
+    opacity: 0;
+}
+
+/* Static properties of the overlay elements */
+.overlay-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 400px;
+    opacity: 0;
+
+    /* Centering the elements horizontally and vertically */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transform: translateY(-10%);
+}
+
+
+
+.col-sm{
+    padding: 0 5vw 0 5vw;
+}
+
+.img_personal{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bio{
+    color: gray;
+    text-align: center;
+    padding: 5vh 0 5vh 0;
+}
