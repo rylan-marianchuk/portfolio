@@ -27,6 +27,12 @@
         <img class="profile" src="img/profile/Rylan%20Marianchuk.JPG"></div>
         <h3 class="subtitle" style="font-size: 3em">Rylan Marianchuk</h3>
         <h3 class="subtitle">University of Calgary, Canada</h3>
+        <form action = "/data" method = "POST">
+            <p>COMMENTS</p>
+            <textarea name="text-input">Enter Comment</textarea>
+            <br/><br/>
+            <input type="submit" />
+        </form>
         <button onclick="getComments()" class="subtitle">See comments!</button>
         <div id="comment-container" class="subtitle"></div>
     </div>
