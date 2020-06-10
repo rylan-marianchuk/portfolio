@@ -8,8 +8,8 @@ $('.trigger').click(function() {
     }
 });
 
-function getBirthday(){
-    fetch('/birthday').then(response => response.text()).then((day) => {
-    document.getElementById('birthday-container').innerText = day;
+function getComments(){
+    fetch('/data').then(response => response.text()).then((comments) => {
+    document.getElementById('comment-container').innerText = comments;
   });
 }
