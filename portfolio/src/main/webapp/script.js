@@ -7,3 +7,9 @@ $('.trigger').click(function() {
         $('.name-container').toggleClass("animate-name");
     }
 });
+
+function getBirthday(){
+    fetch('/birthday').then(response => response.text()).then((day) => {
+    document.getElementById('birthday-container').innerText = day;
+  });
+}
