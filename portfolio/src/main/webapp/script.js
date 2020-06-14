@@ -8,8 +8,23 @@ $('.trigger').click(function() {
     }
 });
 
-function getComments(){
-    fetch('/data').then(response => response.text()).then((comments) => {
-    document.getElementById('comment-container').innerText = comments;
+
+/** Retrieve comments from the data store */
+function getComments() {
+  fetch('/list-comments').then(response => response.json()).then((comments) => {
+
+    const commentList = document.getElementById('comment-list');
+    console.log(commentList);
+    comments.forEach((comment) => { commentList.appendChild(showComment(comment));})
   });
+}
+
+/** Display a given comment withtin the list on index */
+function showComment(comment){
+    const COMMENT = document.createElement('li');
+
+    COMMENT.className = 'comment';
+
+    COMMENT.innerText = comment;
+    return COMMENT;
 }
