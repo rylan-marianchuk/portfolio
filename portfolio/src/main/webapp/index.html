@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-nav">
+        <button class="trigger" style="margin-top: 0;"><img src="img/MenuIcon.png" style="max-height: 100%; max-width: 100%; width: 50%; height: 35%; pointer-events: none;"></button>
+        <div class="navbar">
+            <a href="#">R Y L A N  &nbsp; M A R I A N C H U K</a>
+        </div>
     </div>
-  </body>
+
+    <ul class="side-menu">
+        <li class="menu-items"><a href="#"> H O M E </a></li>
+        <li class="menu-items"><a href="projects.html">P R O J E C T S</a></li>
+        <li class="menu-items"><a href="personal2.html">B I O</a></li>
+    </ul>
+    <div class="side-nav"></div>
+
+
+    <div class="profile-container">
+        <img class="profile" src="img/profile/Rylan%20Marianchuk.JPG"></div>
+        <h3 class="subtitle" style="font-size: 3em">Rylan Marianchuk</h3>
+        <h3 class="subtitle">University of Calgary, Canada</h3>
+        <br>
+        <hr>
+
+        <form action = "/data" method = "POST" id='comment-form'>
+            <p>COMMENTS</p>
+            <textarea name="text-input">Enter Comment</textarea>
+            <br/><br/>
+            <input  class="comment-button" type="submit" />
+        </form>
+
+        <div class="comment-section">
+            <button onclick="getComments()" class="comment-button">See comments!</button>
+            <ul id="comment-list"></ul>
+        </div>
+    </div>
+    <div class="holder"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="rellax.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

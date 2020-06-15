@@ -1,0 +1,143 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration:none;
+  color: inherit;
+}
+
+.trigger {
+  background-color: rgb(82, 84, 102);
+  position: fixed;
+  width: 4vw;
+  height: 4vw;
+  left: 0;
+  z-index: 10;
+  border: none;
+  margin-top: 2vh;
+}
+
+.navbar {
+  margin-left: 4vw;
+  overflow: hidden;
+  background-color: rgba(207, 207, 207, 0.59);
+  position: fixed;
+  top: 0;
+  transition: .8s;
+  width: 100%;
+  z-index: 10;
+}
+.navbar:hover{
+  background-color: rgba(135, 135, 135, 0.8);
+}
+
+.navbar a {
+  opacity: 1;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:focus {outline:0;}
+
+.side-nav{
+  background-color: #4b4b4b;
+  position: fixed;
+  width: 55vw;
+  height: 140vh;
+  padding: 0;
+  margin-top: -10vh;
+  margin-left: -57vw;
+  transition: transform .5s cubic-bezier(1.000, 0.005, 0.240, 1.000);
+  transform-origin: top right;
+  transform-style: preserve-3D;
+  z-index: 9;
+}
+
+
+.nav-toggle{
+    transform: rotate(-25deg);
+    position: fixed;
+    margin-top: -10vh;
+}
+@media screen and (max-width: 1000px) {
+  .nav-toggle{
+    transform: rotate(-19deg);
+    position: fixed;
+    margin-top: -10vh;
+  }
+  .trigger{
+    width: 50px;
+    height: 50px;
+  }
+  .side-nav{
+    background-color: #4b4b4b;
+    position: fixed;
+    width: 55vw;
+    height: 140vh;
+    padding: 0;
+    margin-top: -10vh;
+    margin-left: -57vw;
+    transition: transform .5s cubic-bezier(1.000, 0.005, 0.240, 1.000);
+    transform-origin: top right;
+    transform-style: preserve-3D;
+    z-index: 9;
+  }
+  .navbar {
+    margin-left: 50px;
+  }
+}
+#topNav{
+  margin-left: 4vw;
+  overflow: hidden;
+  background-color: rgba(98, 98, 98, 0.14);
+  z-index: 10;
+}
+
+.nav-item {
+  float: left;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.side-menu{
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  bottom: 0;
+  height: 60px;
+  margin-bottom: 30px;
+  transition: transform 0.7s 0s cubic-bezier(1, 0.005, 0.24, 1);
+  margin-left: -288px;
+}
+
+.menu-items:nth-child(2) { animation-delay: 0.2s }
+.menu-items:nth-child(3) { animation-delay: 0.4s }
+
+.text-link-toggle {
+  transform: translateX(300px);
+  color: white;
+}
+
+.footer{
+
+}
